@@ -210,3 +210,5 @@ __marimo__/
 myenv
 .idea
 docker-compose.yaml
+data
+logs
