@@ -212,3 +212,4 @@ myenv
 docker-compose.yaml
 data
 logs
+config
