@@ -1,2 +1,4 @@
 airflow - 2.10.5
 duckdb - 1.2.2
+
+Источник - https://open-meteo.com/ - Используем впн
