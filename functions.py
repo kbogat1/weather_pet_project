@@ -3,6 +3,7 @@ import openmeteo_requests
 import pandas as pd
 import requests_cache
 from retry_requests import retry
+import json
 
 # Setup the Open-Meteo API client with cache and retry on error
 cache_session = requests_cache.CachedSession('.cache', expire_after = 3600)
@@ -83,4 +84,4 @@ def get_weather_data_from_api(start_date, end_date):
     daily_data["shortwave_radiation_sum"] = daily_shortwave_radiation_sum
     daily_data["et0_fao_evapotranspiration"] = daily_et0_fao_evapotranspiration
 
-    return daily_data
+    return json.dumps(daily_data, ident=4)
